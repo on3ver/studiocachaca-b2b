@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Área do Revendedor Studio Cachaça — catálogo comercial B2B, condições de revenda e solicitação de pedidos." />
+  <title>Studio Cachaça | Área do Revendedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="age-bar">VENDA EXCLUSIVA PARA MAIORES DE 18 ANOS • ÁREA COMERCIAL B2B</div>
+
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Studio Cachaça">
+      <span class="brand-mark">SC</span>
+      <span>
+        <strong>STUDIO CACHAÇA</strong>
+        <small>ÁREA DO REVENDEDOR</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#revenda">Revenda</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#condicoes">Condições</a>
+      <a href="#como-comprar">Como comprar</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+
+    <a class="btn btn-dark header-cta" href="https://wa.me/5534984407659?text=Olá!%20Gostaria%20de%20falar%20com%20o%20comercial%20da%20Studio%20Cachaça." target="_blank" rel="noopener">
+      Falar com o comercial
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">STUDIO CACHAÇA • NEGÓCIOS</span>
+        <h1>Uma seleção feita para vender bem <em>no seu negócio.</em></h1>
+        <p>
+          Conheça a linha Studio Cachaça para revenda, consulte condições comerciais,
+          monte seu pedido e envie diretamente para nosso atendimento.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#catalogo">Ver catálogo de revenda</a>
+          <a class="btn btn-ghost" href="#condicoes">Conhecer condições</a>
+        </div>
+        <div class="quick-facts">
+          <div><span>01</span><strong>Atendimento B2B</strong><small>Canal dedicado para revendedores</small></div>
+          <div><span>02</span><strong>Pedido facilitado</strong><small>Monte e envie pelo WhatsApp</small></div>
+          <div><span>03</span><strong>Envio nacional</strong><small>Conforme disponibilidade logística</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="bottle bottle-a">
+          <div class="cap"></div><div class="neck"></div><div class="body"><span>STUDIO<br><b>60</b><br><small>AMBURANA</small></span></div>
+        </div>
+        <div class="bottle bottle-b">
+          <div class="cap"></div><div class="neck"></div><div class="body"><span>STUDIO<br><b>60</b><br><small>PRATA</small></span></div>
+        </div>
+        <div class="bottle bottle-c">
+          <div class="cap"></div><div class="neck"></div><div class="body"><span>STUDIO<br><b>60</b><br><small>PREMIUM</small></span></div>
+        </div>
+        <div class="hero-tag">PORTFÓLIO<br><strong>PARA REVENDA</strong></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>CATÁLOGO COMERCIAL</span><i></i>
+      <span>CONDIÇÕES PARA REVENDA</span><i></i>
+      <span>PEDIDO PELO WHATSAPP</span><i></i>
+      <span>SUPORTE COMERCIAL</span>
+    </section>
+
+    <section class="section intro" id="revenda">
+      <div class="section-kicker">PARCERIA COMERCIAL</div>
+      <div class="split-title">
+        <h2>Mais que fornecedor.<br><span>Uma marca para sua prateleira.</span></h2>
+        <p>
+          A área B2B foi pensada para que lojistas, adegas, empórios, bares,
+          restaurantes, distribuidores e revendedores encontrem todas as
+          informações comerciais em um só lugar.
+        </p>
+      </div>
+
+      <div class="benefits">
+        <article>
+          <span class="benefit-no">01</span>
+          <h3>Apelo de exposição</h3>
+          <p>Produtos com apresentação pensada para chamar atenção no ponto de venda e compor vitrines, kits e presentes.</p>
+        </article>
+        <article>
+          <span class="benefit-no">02</span>
+          <h3>Portfólio variado</h3>
+          <p>Diferentes acabamentos, madeiras, volumes e faixas de produto para atender perfis distintos de consumidor.</p>
+        </article>
+        <article>
+          <span class="benefit-no">03</span>
+          <h3>Compra sem atrito</h3>
+          <p>Escolha os produtos, informe quantidades e envie o pedido pronto para conferência do comercial.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalogo">
+      <div class="catalog-head">
+        <div>
+          <div class="section-kicker">CATÁLOGO B2B</div>
+          <h2>Monte seu pedido</h2>
+          <p>Valores de atacado devem ser preenchidos pela empresa antes da publicação.</p>
+        </div>
+        <div class="filter-row" role="tablist">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="studio60">Studio 60</button>
+          <button class="filter" data-filter="saogotardo">São Gotardo</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="order-panel" id="pedido">
+      <div class="order-panel-inner">
+        <div class="order-summary">
+          <span class="section-kicker">SEU PEDIDO</span>
+          <h2>Resumo comercial</h2>
+          <p>Adicione itens no catálogo. O total será calculado automaticamente.</p>
+          <div class="order-stats">
+            <div><strong id="itemsCount">0</strong><span>unidades</span></div>
+            <div><strong id="orderTotal">R$ 0,00</strong><span>total estimado</span></div>
+          </div>
+        </div>
+        <div class="order-list-wrap">
+          <div class="order-list" id="orderList">
+            <div class="empty-order">Seu pedido ainda está vazio.</div>
+          </div>
+          <button class="btn btn-gold btn-wide" id="sendOrder" disabled>Enviar pedido pelo WhatsApp</button>
+          <small class="order-note">O envio não conclui a compra. Estoque, frete, pagamento e valores são confirmados pelo comercial.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section conditions" id="condicoes">
+      <div class="section-kicker">CONDIÇÕES COMERCIAIS</div>
+      <div class="split-title">
+        <h2>O essencial, sem letras miúdas.</h2>
+        <p>Substitua os campos abaixo pelas condições reais da Studio Cachaça antes de publicar.</p>
+      </div>
+
+      <div class="conditions-grid">
+        <article><span>01</span><h3>Pedido mínimo</h3><p class="editable-placeholder">Definir valor mínimo ou quantidade mínima.</p></article>
+        <article><span>02</span><h3>Pagamento</h3><p class="editable-placeholder">Definir PIX, boleto, cartão e regras para prazo.</p></article>
+        <article><span>03</span><h3>Expedição</h3><p class="editable-placeholder">Definir prazo médio para separação e despacho.</p></article>
+        <article><span>04</span><h3>Frete</h3><p class="editable-placeholder">Definir transportadoras, retirada e política de frete.</p></article>
+        <article><span>05</span><h3>Múltiplos / caixas</h3><p class="editable-placeholder">Definir múltiplos de compra por SKU, quando houver.</p></article>
+        <article><span>06</span><h3>Atendimento</h3><p>Conferência comercial pelo WhatsApp antes da confirmação final.</p></article>
+      </div>
+    </section>
+
+    <section class="section process" id="como-comprar">
+      <div class="process-copy">
+        <div class="section-kicker">COMO COMPRAR</div>
+        <h2>Do catálogo ao pedido em quatro etapas.</h2>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3>Escolha</h3><p>Navegue pela linha e selecione os produtos.</p></article>
+        <article><span>02</span><h3>Quantidade</h3><p>Informe quantas unidades deseja de cada item.</p></article>
+        <article><span>03</span><h3>Envie</h3><p>O site gera uma mensagem organizada para o comercial.</p></article>
+        <article><span>04</span><h3>Confirme</h3><p>A equipe valida estoque, frete, pagamento e prazo.</p></article>
+      </div>
+    </section>
+
+    <section class="audience">
+      <div class="audience-inner">
+        <span class="section-kicker light">FEITO PARA NEGÓCIOS</span>
+        <h2>Uma página comercial para quem compra para revender.</h2>
+        <div class="chips">
+          <span>Adegas</span><span>Empórios</span><span>Bares</span><span>Restaurantes</span>
+          <span>Mercados</span><span>Lojas de presentes</span><span>E-commerce</span><span>Distribuidores</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-kicker">DÚVIDAS FREQUENTES</div>
+      <h2>Informação rápida para decidir.</h2>
+      <div class="faq-list">
+        <details><summary>Qual é o pedido mínimo?</summary><p>Este campo deve receber a política comercial real da empresa.</p></details>
+        <details><summary>Preciso ter CNPJ para comprar como revendedor?</summary><p>Defina aqui se a venda B2B exige CNPJ, MEI ou outro cadastro comercial.</p></details>
+        <details><summary>Posso misturar produtos para atingir o pedido mínimo?</summary><p>Defina as regras de mix de produtos e múltiplos por SKU.</p></details>
+        <details><summary>Como funciona o frete?</summary><p>O frete pode ser calculado após o envio do pedido, conforme destino, volume e transportadora.</p></details>
+        <details><summary>Os valores exibidos já são os valores finais?</summary><p>Os valores são comerciais e devem ser confirmados junto ao atendimento, especialmente em tabelas promocionais ou por volume.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div>
+        <span class="section-kicker light">STUDIO CACHAÇA • REVENDA</span>
+        <h2>Pronto para levar a marca para o seu negócio?</h2>
+        <p>Monte seu pedido ou fale com o atendimento comercial.</p>
+      </div>
+      <div class="final-actions">
+        <a class="btn btn-gold" href="#catalogo">Montar pedido</a>
+        <a class="btn btn-outline-light" href="https://wa.me/5534984407659?text=Olá!%20Tenho%20interesse%20em%20revender%20os%20produtos%20da%20Studio%20Cachaça." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand footer-brand">
+      <span class="brand-mark">SC</span>
+      <span><strong>STUDIO CACHAÇA</strong><small>ÁREA DO REVENDEDOR</small></span>
+    </div>
+    <p>Venda de bebidas alcoólicas proibida para menores de 18 anos. Beba com moderação.</p>
+    <p class="dev">Protótipo B2B • Estrutura pronta para personalização comercial.</p>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/5534984407659?text=Olá!%20Gostaria%20de%20informações%20sobre%20revenda." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span>WA</span>
+  </a>
+
+  <script src="./script.js"></script>
+</body>
+</html>
